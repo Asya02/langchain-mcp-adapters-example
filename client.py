@@ -13,16 +13,13 @@ load_dotenv(find_dotenv())
 
 # model = ChatOpenAI(model="gpt-4o-mini")
 
-giga_user = os.environ.get("giga_user")
-giga_password = os.environ.get("giga_password")
+# giga_user = os.environ.get("giga_user")
+# giga_password = os.environ.get("giga_password")
 
 # LLM GigaChat
 model = GigaChat(model="GigaChat-Max",
                 verify_ssl_certs=False,
                 profanity_check=False,
-                password=giga_password,
-                user=giga_user,
-                base_url="https://wmapi-ift.saluteai-pd.sberdevices.ru/v1",
                 top_p=0,
                 streaming=False,
                 max_tokens=8000,
@@ -49,7 +46,7 @@ async def main():
             agent = create_react_agent(model, tools)
 
             agent_response = await agent.ainvoke({"messages": [{"role": "user", "content": "what's (3 + 5) x 12?"}]})
-            print(agent_response)
+            print(agent_response['messages'][-1].content)
 
 # Run the main function
 asyncio.run(main())

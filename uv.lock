@@ -203,15 +203,15 @@ wheels = [
 
 [[package]]
 name = "gigachat"
-version = "0.1.38"
+version = "0.1.39"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/de/eb/a64a4840878d2a75f1df62dbb1efeb36b5a363df0b6077c9df91e181f6b5/gigachat-0.1.38.tar.gz", hash = "sha256:8b1315ac080c4c0f99f65e09566e46c2364579ad8300cfdbe248f00558bc1d56", size = 31066 }
+sdist = { url = "https://files.pythonhosted.org/packages/51/35/19b6cef3d0fcf3cfeb2f9a57d55ebc402e6fc08840efd2347f333db9353a/gigachat-0.1.39.tar.gz", hash = "sha256:6deca321cd9654291c0f2636db5758db2883eb152f88c95aaa3988b5c23b8be4", size = 29112 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/45/04/94070b0856df98da5bccb0536e3864735b52ada96003252d33e6707433a1/gigachat-0.1.38-py3-none-any.whl", hash = "sha256:ba2e1aedee063ff3ac05301fcaa83ed0175e5076aa504d3d265da05bed905e43", size = 62984 },
+    { url = "https://files.pythonhosted.org/packages/0b/ff/d4a7937795ee5c2cae6d0cc5a4cbea5d428c53f36714bed216e6ff8f02fc/gigachat-0.1.39-py3-none-any.whl", hash = "sha256:ae9aa89953ac0bca01eb84a5883f9b3bd7035bde41d683b96f246f2b45a79cdb", size = 67047 },
 ]
 
 [[package]]
@@ -445,16 +445,16 @@ wheels = [
 
 [[package]]
 name = "langchain-gigachat"
-version = "0.3.4"
+version = "0.3.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "gigachat" },
     { name = "langchain-core" },
     { name = "types-requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/02/2c/20dae27822c15a2b2fb1702919ba7d0c5db909ea6d3010f190c0156c9640/langchain_gigachat-0.3.4.tar.gz", hash = "sha256:fafb456bd56140b96dd9f2da92c9a2d4850ab2699f285eda4962b614bbd2cd2d", size = 21544 }
+sdist = { url = "https://files.pythonhosted.org/packages/52/6a/938e2e473bb460ebc4f20d92601d73706a474f604843022277e434a536df/langchain_gigachat-0.3.6.tar.gz", hash = "sha256:1c9faa1d339ce0573ffd65a63afbfd47cf321881209a95289dd5519c197de98e", size = 21847 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/86/1e/a8de0565066986dddc810f590823959501f4799e5eefa264c84884ec01e3/langchain_gigachat-0.3.4-py3-none-any.whl", hash = "sha256:d7f5bbe1ebcc9d6a0714b1d6669752393713964390a5429ca2f8a1ef29d53b83", size = 25519 },
+    { url = "https://files.pythonhosted.org/packages/f0/28/35568ccdd3c73748a12745eeaefba1cb204440685cfd759877323ba67897/langchain_gigachat-0.3.6-py3-none-any.whl", hash = "sha256:6ac8589e249a36fa448e42784166fe2d79b36f342749a71b5ea75baba1acb0c6", size = 26551 },
 ]
 
 [[package]]
@@ -622,7 +622,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
-    { name = "langchain-gigachat", specifier = ">=0.3.4" },
+    { name = "langchain-gigachat", specifier = ">=0.3.6" },
     { name = "langchain-mcp-adapters", specifier = ">=0.0.3" },
     { name = "langchain-openai", specifier = ">=0.3.7" },
     { name = "langgraph", specifier = ">=0.3.5" },
