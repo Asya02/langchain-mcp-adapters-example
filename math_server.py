@@ -1,4 +1,5 @@
 from mcp.server.fastmcp import FastMCP
+import sys
 
 mcp = FastMCP("Math")
 
@@ -16,4 +17,5 @@ def multiply(a: int, b: int) -> int:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    transport = sys.argv[1] if len(sys.argv) > 1 else "stdio"
+    mcp.run(transport=transport)
