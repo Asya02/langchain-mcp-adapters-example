@@ -2,6 +2,11 @@
 
 Simple MCP example for GigaChat
 
+# Components
+	1.	math_server.py – MCP server with two mathematical functions.
+	2.	client.py – MCP client for local interactions (automatically starts the MCP server).
+	3.	client_http.py – MCP client for HTTP interactions (requires the server to be started in SSE mode).
+
 # Stdio mode (local)
 ## Configuration
 1. Setup GigaChat credentials in .env 
