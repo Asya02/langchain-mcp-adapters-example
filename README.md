@@ -29,5 +29,5 @@ uv run math_server.py sse
 
 ## Run client
 ```
-
+uv run client_http.py
 ```
